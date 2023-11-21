@@ -480,8 +480,7 @@ textarea {
     }
 
     .contnav {
-        width: auto;
-        margin: 20px;
+        font-size: 10px;
     }
     
     form .top {
