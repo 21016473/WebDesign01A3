@@ -1,0 +1,589 @@
+/* ==========BASIC UNIVERSAL STYLING & CLEAN UP============= */
+
+body {
+    margin: 0;
+    font-family: 'Noirden', sans-serif;
+}
+
+.subtitle{
+    text-align: center;
+    font-family: 'Noirden', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* ==========HEADER============= */
+.banner {
+    /*Waldara Farm. View of the Pond. Photograph. Waldara. Accessed October 10, 2023. https://www.waldara.com.au/grounds*/
+    background-image: url(../images/header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
+    position: relative;
+    width: 100%;
+    height: 500px;
+    padding: 0%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* TOP */
+.top {
+    width: 100%;
+}
+
+        /* ==========LOGO============= */
+        .logo {
+            float: left;
+            z-index: 2;
+            position: relative;
+            padding: 10px 0 0 10px;
+        }
+
+        .logo img {
+            height: 50px;
+            width: 50px;
+        }
+
+        /* ==========SOCIALS========== */
+        #socul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            float: right;
+        }
+
+        .socli {
+            display: inline;
+            padding: 5px;
+            padding-right: 10px;
+            text-align: center;
+            font-weight: normal;
+        }
+
+/* MAIN */
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 100%;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+.main .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title h1, h2 {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Homemade Apple', cursive;
+    font-weight: normal;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-family: 'Noirden', sans-serif;
+    font-weight: 100;
+    margin-top: -20px;
+}
+
+.title button {
+    justify-content: center;
+    margin: auto;
+    width: 150px;
+    background-color: #000000;
+    color: white;
+    padding: 10px 30px 10px 30px;
+    position: relative;
+    border: none;
+    text-align: center;
+}
+
+
+
+/* ==========NAVIGATION============= */
+.nav {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 10px 0;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1000;
+}
+
+#navul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navli {
+    display: inline;
+    padding: 5px;
+    padding-right: 10px;
+    border-right: 1px solid black;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* link styling for navigation bar */
+.navli:last-child {
+    border-right: none;
+}
+
+.navli a:link {
+    color: #000000;
+    text-decoration: none;
+}
+
+.navli a:visited {
+    color: #000000;
+    text-decoration: none;
+}
+
+.navli a:hover {
+    color: #517e92;
+    text-decoration: none;
+}
+
+.navli a:active {
+    color: #517e92;
+    text-decoration: none;
+}
+
+/* ==========MAIN BODY CONTENT============= */
+/* ==========ABOUT STYLING============= */
+#about {
+    margin: auto;
+    padding: 50px 0 20px 0;
+}
+
+/* text styling */
+#about .subtitle {
+    color: #517e92;
+    font-weight: bold;
+}
+
+figcaption {
+    padding: 10px 0 20px 0;
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+    margin: auto;
+    max-width: 90%;
+    position: top;
+}
+
+/* image containers */
+.farm, .house {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: center;
+    position: relative;
+}
+
+.farm {
+    width: 65%;
+}
+
+.house {
+    width: 65%;
+}
+
+figure {
+    display: inline;
+    position: static;
+    margin: auto;
+}
+
+figure img {
+    display: block;
+    max-width: 90%;
+    height: auto;
+    margin: 0 auto;
+    justify-content: center;
+    padding: auto;
+}
+
+.fix img {
+    display: block;
+    max-width: 85%;
+    height: auto;
+    margin: 0 auto;
+    justify-content: center;
+    padding: auto;
+}
+
+/*ROSIE ICON*/
+.rosie {
+    max-width: 15%;
+    height: auto;
+    margin: auto;
+    position: absolute;
+    z-index: 100;
+    bottom: 17.5%;
+    right: -4%;
+}
+
+/* ==========GALLERY STYLING============= */
+#gallery {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    padding: 50px 0 50px 0;
+}
+
+/* flickity css styling */
+.slides {
+    padding: 30px 0 10px 0;
+}
+
+.cell {
+    width: auto;
+    margin-right: 10px;
+    border-radius: 5px;
+    counter-increment: carousel-cell;
+}
+
+.cell img {
+    height: 300px;
+    margin: auto;
+}
+
+
+
+/* ==========CONTACT STYLING============= */
+#contact {
+    margin: auto;
+    height: 100%;
+    background-color: #90aab6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 0 50px 0;
+}
+
+#contact .subtitle {
+    color: rgb(0, 0, 0);
+}
+
+form .top {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+
+    padding-bottom: 15px;
+}
+
+/* left side of contact form */
+.left {
+    float: left;
+    width: 50%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 4.5px;
+}
+
+input {
+    padding: 10px;
+    height: 18px;
+    border: none;
+}
+
+/* right side of contact form */
+.right {
+    display: flex;
+    float: right;
+    width: 50%;
+    height: 150px;
+    padding-left: 4.5px;
+}
+
+.right textarea {
+    display: flex;
+    float: right;
+    width: 100%;
+}
+
+textarea {
+    padding: 10px;
+    resize: none;
+    width: 350px;
+    height: 130px;
+    border: none;
+    font-family: 'Noirden', sans-serif;
+}
+
+/* send button */
+.bottom {
+    display: inline-flex;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+    padding: 10px 0 20px 0;
+}
+
+.bottom button{
+    justify-content: center;
+    margin: auto;
+    width: 150px;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    padding: 10px 30px 10px 30px;
+    bottom: 30px;
+    border: none;
+    text-align: center;
+}
+
+/* contact list */
+.contnav {
+    display: flex;
+    justify-content: center;
+    padding: 0 0 20px 0;
+}
+
+#contul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.contnav .navli {
+    display: inline;
+    padding: 5px;
+    padding-right: 10px;
+    border-right: 1px solid rgb(0, 0, 0);
+    text-align: center;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+}
+
+.navli:last-child {
+    border-right: none;
+}
+
+
+
+/* ==========BOOKINGS STYLING============= */
+#bookings {
+    margin: auto;
+    padding: 50px 0 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+}
+
+#bookings img {
+    width: 200px;
+    margin: auto;
+}
+
+.bookings {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.book {
+    text-align: left;
+    font-family:'Courier New', Courier, monospace;
+    width: 70%;
+    margin: 20px;
+}
+
+#bookings button {
+    justify-content: center;
+    margin: auto;
+    width: 150px;
+    background-color: black;
+    color: white;
+    padding: 10px 30px 10px 30px;
+    bottom: 30px;
+    border: none;
+    text-align: center;
+}
+
+
+/* ==========PUBLICATIONS STYLING============= */
+#publications {
+    padding: 25px 0 100px 0;
+    width: 100%;
+    height: 100px;
+    margin: auto;
+    background-color:rgb(144, 170, 182);
+}
+
+#publications .subtitle {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.pubs {
+    margin: auto;
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+}
+
+.pubs img {
+    margin: auto;
+    align-items: center;
+    width: 100px;
+    padding: 10px;
+}
+
+/* ==========FOOTER STYLIING============= */
+
+/* ==========RESPONSIVE DESIGN============= */
+
+/* ===== TABLET: Media queries for verticle and horizontal ===== */
+@media only screen and (max-width: 1024px) { 
+
+    /*ABOUT ROSIE ICON*/
+    .rosie {
+        max-width: 20%;
+        height: auto;
+        margin: auto;
+        position: absolute;
+        z-index: 100;
+        bottom: 30%;
+        right: -4%;
+    }
+
+    /*CONTACT*/
+    #contact {
+    margin: auto;
+    height: 100%;
+    background-color: #90aab6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+
+    form .top {
+        width: 60%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    input {
+        height: 18px;
+    }
+
+    .left {
+        width: 100%;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-right: 0;
+
+        margin: 0 0 20px 0;
+    }
+
+    .right {
+        display: flex;
+        width: 100%;
+        height: 150px;
+        padding-left: 0;
+
+        margin: 0;
+    }   
+    
+}
+
+@media only screen and (max-width: 768px) { 
+    
+    /*ABOUT*/
+    #about {
+        margin: auto;
+        padding: 50px 0 20px 0;
+    }
+
+    .farm, .house {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        justify-content: center;
+        padding
+    } 
+    
+    .rosie {
+        max-width: 30%;
+        height: auto;
+        margin: auto;
+        position: absolute;
+        z-index: 100;
+        bottom: 13%;
+        right: -4%;
+    }
+
+    /*BOOKINGS*/
+    .bookings {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .book {
+        text-align: center;
+        font-family:'Courier New', Courier, monospace;
+        width: 90%;
+        margin: 20px;
+    }
+
+}
+
+/* ===== MOBILE: Media queries for small mobile resolution. ===== */
+@media only screen and (max-width: 640px) { 
+    /*HEADER*/
+    .banner {
+        width: 100%;
+        height: 300px;
+        padding: 0%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+        width: 100%;
+    
+        position: absolute;
+        top: 0;
+        bottom: 0;
+    }
+    
+    /*ABOUT*/
+    .farm, .house {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        justify-content: center;
+    }
+     
+}
