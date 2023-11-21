@@ -479,6 +479,11 @@ textarea {
     justify-content: center;
     }
 
+    .contnav {
+        width: auto;
+        margin: 20px;
+    }
+    
     form .top {
         width: 60%;
         margin: auto;
